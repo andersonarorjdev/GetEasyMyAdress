@@ -13,7 +13,8 @@
   recortar dado de um respectivo campo de forma rápida, apresentação de resultados ao efetuar a busca e um botão para limpar o campo de busca de forma rápida, sem que você tenha que ficar por muitas vezes apertando o 'BACKSPACE'</h3>
   
   <h4>Ela retorna feedbacks visuais de acordo com os dados disponíveis sobre o local que você pesquisou.</h4>
-  <img src="./prints/jaguar.png>
+  
+  <img src="./prints/jaguar.png">
   
   
   <img src="./prints/mar.png">
