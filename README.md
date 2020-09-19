@@ -21,4 +21,5 @@
 
 **Linguagens e Frameworks usados: Vannila Javascript, CSS3, HTML5, Bootstrap, API do ViaCep**
 
+**Novas Features adicionadas: Agora pode ser pressionado as teclas: "Enter" para poder fazer a pesquisa e "q" para poder limpar os campos.**
 Caso tenha alguma idéia de feature que possa ser disponibilizada na ferramenta, ou até mesmo uma correção ou feedback sobre ela. Pode entrar em contato pelos links disponibilizados na própria ferramenta.
