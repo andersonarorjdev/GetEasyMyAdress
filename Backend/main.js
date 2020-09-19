@@ -9,7 +9,6 @@
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
             let status =  xmlHttp.responseText;
             let DadosJson = JSON.parse(status);
-            console.log(DadosJson);
             //Para acessar cada dado de forma separada preciso acessa a variavel DadosJson.
 
             document.getElementById('Endereco').value = DadosJson.logradouro;
@@ -161,11 +160,25 @@ RecuperaDD = () =>{
     document.execCommand('copy');
 }
 
-
-Teste = () =>{
-    alert('Ta funcionando')
-}
-
 Contato = endereco =>{
     window.location.href = endereco;
 }
+
+
+//Atalhos do teclado
+document.addEventListener("keypress", (button) =>{
+      //alert(button.key)
+
+    //Função para o botão 'Enter';
+    if(button.key === 'Enter'){
+        getDadosEnderecoPorCep(document.getElementById('Pesquisa').value);
+    }
+
+    //Letra 'Q' faz limpar os campos
+    if(button.key === 'q'){
+        LimpaCampos();
+    }
+})
+
+const MostraDica = () => alert('Atalhos: Pressione "Enter" para pesquisar e "q" para limpar os campos.')
+   

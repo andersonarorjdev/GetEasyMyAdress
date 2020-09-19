@@ -26,7 +26,13 @@
 		<div class="container-fluid" id="corpo">
 			<!--Pesquisa-->
 			<div class="row mt-5 d-flex justify-content-center">
-				<input class="mt-5" type="text" id="Pesquisa"  placeholder="Digite aqui seu cep"/>
+				<input class="mt-5"
+				 type="text" 
+				 id="Pesquisa"
+				  placeholder="Digite aqui seu cep"
+					
+				  />
+				  <img src="./images/dica.gif" onmouseover="MostraDica()" id="Dica" alt="">
 			</div>
 			<!--Fim da pesquisa-->
 
@@ -61,7 +67,7 @@
 				<img class="copiar" onclick="RecuperaDD()" src="./images/copy.gif" alt="">
 			</div>
 			<div class="row d-flex justify-content-center">
-				<button id="PesquisarButton" onclick="getDadosEnderecoPorCep(Pesquisa.value)">Pesquisar</button>
+				<button id="PesquisarButton" onkeypress="VerificaBotoes()" onclick="getDadosEnderecoPorCep(Pesquisa.value)">Pesquisar</button>
 			</div>
 			<div class="row mt-2  pb-5 d-flex justify-content-center">
 				<button id="LimparCamposButton" onclick="LimpaCampos()">Limpar pesquisa</button>
