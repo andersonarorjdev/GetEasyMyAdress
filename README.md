@@ -1,20 +1,3 @@
-
-  
-<h3>A ferramenta possui funcionalidades pensadas para otimizar sua busca, como: 
-  recortar dado de um respectivo campo de forma rápida, apresentação de resultados ao efetuar a busca e um botão para limpar o campo de busca de forma rápida, sem que você tenha que ficar por muitas vezes apertando o 'BACKSPACE'</h3>
-  
-  <h4>Ela retorna feedbacks visuais de acordo com os dados disponíveis sobre o local que você pesquisou.</h4>
-  
-  <img src="./prints/jaguar.png">
-  
-  
-  <img src="./prints/mar.png">
-
-**Linguagens e Frameworks usados: Vannila Javascript, CSS3, HTML5, Bootstrap, API do ViaCep**
-
-**Novas Features adicionadas: Agora pode ser pressionado as teclas: "Enter" para poder fazer a pesquisa e "q" para poder limpar os campos.**
-Caso tenha alguma idéia de feature que possa ser disponibilizada na ferramenta, ou até mesmo uma correção ou feedback sobre ela. Pode entrar em contato pelos links disponibilizados na própria ferramenta.
-
 <h1 align="center">Welcome to Get Easy My Adress 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
@@ -29,7 +12,7 @@ Caso tenha alguma idéia de feature que possa ser disponibilizada na ferramenta,
 
 <h4>A simple, but much usefull tool, that will help you to take data about your location, Try now and you will love it!🌝 </h4>
 
-> I know, that have a lot of apps with the same porpose, but, they are not pratical! With GetEasyMyAdress you can find data about a especific CEP.
+> I know, that have a lot of apps with the same porpose, but, they are not pratical! With GetEasyMyAdress you can find data about a especific CEP.📍
 
 > So...why don't try to use it?🤔 I promise, you will LOVE!🚀
 
@@ -39,50 +22,41 @@ Caso tenha alguma idéia de feature que possa ser disponibilizada na ferramenta,
 
 ***
 
-### Using it, you can take your adress, house number, city, state, DD and more. Simple and Fast!
+### Using it, you can take your adress, house number, city, state, DD and more. Simple and Fast!🙋
 
-<img align="center" src="./prints/body.png">
+<p align="center">
+  <img align="center" src="./prints/body.png">
+</p>
+<p align="center">
+  <img align="center" heigth="80%" src="./prints/mobile.png">
+</p>
+
+<h3>Features➕:</h3>
+
+- Cut data in specific field or you can cay all fields✂.
+- Clear all fields (new search)📛.
+- Returns visual feedback acording your search❌🚩.
+
+<p align ="center">
+ <img src="./prints/jaguar.png">
+</p>
   
-  <img align="center" width="80%" heigth="80%" src="./prints/mobile.png">
-
- <h1 align="center">Small Breakpoint</h1>
-
- ***
-<p align="center">
-  <img  src="./src/Images/prints/small.png"  />
+<p align ="center">
+  <img src="./prints/mar.png">
 </p>
 
- <h1 align="center">Medium Breakpoint</h1>
 
- ***
-<p align="center">
-  <img  src="./src/Images/prints/middle.png"  />
-</p>
-
-  <h1 align="center">Expanded Breakpoint</h1>
-
- ***
-<p align="center">
-  <img  src="./src/Images/prints/great.png"  />
-</p>
-
-## Downloading project
+## Downloading project⬇
 ```sh
-  git clone https://github.com/andersonarorjdev/Google-Search-Page.git
+  git clone https://github.com/andersonarorjdev/GetEasyMyAdress.git
 ```
 
-
-## Install the Dependencies
-
+## Acess " index.html" on your browser 🖥
+##### This adress will changer according your folder specifications.
 ```sh
-yarn install
+c://user/files/Downloads/GetEasyMyAdress/index.html
 ```
-
-## Starting the server to see the project
-
-```sh
-yarn run 
-``` 
+## Enjoy!🙂
 
 ## Author
 
