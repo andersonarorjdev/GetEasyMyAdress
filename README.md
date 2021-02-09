@@ -10,17 +10,25 @@
 </p>
 
 
-<h4>Tired to fill great forms to take easy datas, how: CEP, DD? ME TOO!🧐</h4>
+<h4>Tired to fill great forms to take easy datas, how: CEP, DD?😔 ME TOO!😵</h4>
 
->Because it, i decide to create this tool. 
- How it works?
- - Simple! First, when you acess this tool. This ask you if you agree to GEMA take your location based in your browser data. Then, based on Latitude and Longitude. Gema calcs your location and show you all data that you need to fill any form.🚀
+>Because it, i decide to create this tool😌. 
+ How it works?🤨
+ - Simple! First, when you acess this tool. Your browser will ask you if you agree to GEMA take your location based in your browser data, you need to click on "allow". Then, based on Latitude and Longitude. Gema calcs your location and show you all data that you need to fill any form.🚀
+
+### Asking Window
+<img src="./images/Asking.png" />
+
+### How GEMA will show you your data:
+<img src="./images/ShowingDatas.png">
 
 ***
+
 ## Acessing the project on production:
 ```url
   https://get-easy-my-adress-mcr3pxena.vercel.app/
 ```
+or you can click here: <a href="https://get-easy-my-adress-mcr3pxena.vercel.app/"> CLICK HERE TO ACESS</a>
 
 ## Downloading the project⬇️
 ```sh
