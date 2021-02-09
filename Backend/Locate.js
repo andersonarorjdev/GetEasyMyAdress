@@ -185,13 +185,13 @@
                             LOADINGIF.style.display = 'none';
                             ButtonsCopy[i].style.display = 'block';
     
-                            CEPTAG.innerHTML = `O seu CEP é: ${cep}.`;
-                            STREETAG.innerHTML = `Rua: ${street}.`;
-                            CITYTAG.innerHTML = `Cidade: ${city}.`;
-                            COUNTRYTAG.innerHTML = `País: ${Country}.`;
-                            REGIONTAG.innerHTML = `Região: ${region}.`;
-                            COUNTRYREGIONTAG.innerHTML = `Região do País: ${Municipality}`;
-                            DDTAG.innerHTML = `O seu DD é: (${DD}).`;
+                            CEPTAG.value = `O seu CEP é: ${cep}.`;
+                            STREETAG.value = `Rua: ${street}.`;
+                            CITYTAG.value = `Cidade: ${city}.`;
+                            COUNTRYTAG.value = `País: ${Country}.`;
+                            REGIONTAG.value = `Região: ${region}.`;
+                            COUNTRYREGIONTAG.value = `Região do País: ${Municipality}`;
+                            DDTAG.value = `O seu DD é: (${DD}).`;
                         }
 
 
@@ -201,3 +201,4 @@
                 })
                 
   }
+  

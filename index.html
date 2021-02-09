@@ -12,9 +12,11 @@
 		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 		<script src="./Backend/Locate.js"></script>
 		<script src="./Backend/Search.js"></script>
+		<script src="./Backend/Copy.js"></script>
 		<link rel="stylesheet" href="./styles/styles.css">
 		<link rel="stylesheet" href="./styles/media-queries.css">
-		<link rel="preconnect" href="https://fonts.gstatic.com">	
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>	
 		<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Slabo+27px&display=swap" rel="stylesheet"> 
 	</head>
 	<body onload="RecuperaPosicao()">
@@ -32,32 +34,62 @@
 					alt="LOADING GIF" 
 				/>
 				<div class="SingleData">
-					<span id="CEP"></span>
-					<button class="CopyButton">Copiar</button>
+					<input id="CEP" disabled/>
+					<button class="CopyButton" onclick="Show('CEP')">
+						Copiar
+					</button>
 				</div>
 				<div class="SingleData">
-					<span id="CITY"></span>
-					<button class="CopyButton">Copiar</button>
+					<input id="CITY" disabled>
+					<button 
+						class="CopyButton"
+						onclick="Show('CITY')"
+						>
+						Copiar
+					</button>
 				</div>
 				<div class="SingleData">
-					<span id="STREET"></span>
-					<button class="CopyButton">Copiar</button>
+					<input id="STREET" disabled>
+					<button 
+						class="CopyButton"
+						onclick="Show('STREET')"
+						>
+						Copiar
+					</button>
 				</div>
 				<div class="SingleData">
-					<span id="Country"></span>
-					<button class="CopyButton">Copiar</button>
+					<input id="Country" disabled>
+					<button 
+						class="CopyButton"
+						onclick="Show('Country')"
+						>
+						Copiar</button>
 				</div>
 				<div class="SingleData">
-					<span id="Region"></span>
-					<button class="CopyButton">Copiar</button>
+					<input id="Region" disabled>
+					<button 
+						class="CopyButton"
+						onclick="Show('Region')"
+						>
+						Copiar
+					</button>
 				</div>
 				<div class="SingleData">
-					<span id="CountryRegion"></span>
-					<button class="CopyButton">Copiar</button>
+					<input id="CountryRegion" disabled>
+					<button 
+						class="CopyButton"
+						onclick="Show('CountryRegion')"
+						>
+						Copiar</button>
 				</div>
 				<div class="SingleData">
-					<span id="DD"></span>
-					<button class="CopyButton">Copiar</button>
+					<input id="DD" disabled>
+					<button 
+						class="CopyButton"
+						onclick="Show('DD')"
+						>
+						Copiar
+					</button>
 				</div>
 
 				</div>
