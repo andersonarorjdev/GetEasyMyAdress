@@ -180,9 +180,31 @@
                         let ButtonsCopy = document.querySelectorAll('.CopyButton');
 
 
-                        const VerifyData = field =>{
-                            if(field == undefined){ 
-                                return 'Dado não encontrado!';
+                        const VerifyData = (field, WhatField) =>{
+                            if(field == undefined){
+                                switch (WhatField) {
+                                    case 'CEP':
+                                        return 'CEP não entrado!';
+                                    
+                                    case 'STREET':
+                                        return 'Rua não encontrada!';
+                                    
+                                    case 'CITY':
+                                        return 'Cidade não encontrada!';
+
+                                    case 'COUNTRY':
+                                        return 'País não encontrado!';
+                                    
+                                    case 'REGION':
+                                        return 'Região não encontrada!';
+                                    
+                                    case 'MUNICIPALATY':
+                                        return 'Região geofráfica não encontrada!';
+                                    
+                                    case 'DD':
+                                        return 'DD não encontrado!';
+                                } 
+
                             }else{
                                 return `Seu dado é: ${field}`;
                             }
@@ -195,13 +217,13 @@
                             Fields[i].style.display = 'flex';
                             ButtonsCopy[i].style.display = 'block';
     
-                            CEPTAG.value = VerifyData(cep);
-                            STREETAG.value = VerifyData(street);
-                            CITYTAG.value = VerifyData(city);
-                            COUNTRYTAG.value = VerifyData(Country);
-                            REGIONTAG.value = VerifyData(region);
-                            COUNTRYREGIONTAG.value = VerifyData(Municipality);
-                            DDTAG.value = VerifyData(DD);
+                            CEPTAG.value = VerifyData(cep, 'CEP');
+                            STREETAG.value = VerifyData(street, 'STREET');
+                            CITYTAG.value = VerifyData(city, 'CITY');
+                            COUNTRYTAG.value = VerifyData(Country, 'COUNTRY');
+                            REGIONTAG.value = VerifyData(region, 'REGION');
+                            COUNTRYREGIONTAG.value = VerifyData(Municipality, 'MUNICIPALATY');
+                            DDTAG.value = VerifyData(DD, 'DD');
                         }
 
 
