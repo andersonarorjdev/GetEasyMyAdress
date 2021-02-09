@@ -180,6 +180,14 @@
                         let ButtonsCopy = document.querySelectorAll('.CopyButton');
 
 
+                        const VerifyData = field =>{
+                            if(field == undefined){ 
+                                return 'Dado não encontrado!';
+                            }else{
+                                return `Seu dado é: ${field}`;
+                            }
+                        }
+
                         for(let i = 0; i < ButtonsCopy.length; i++){
                             
                             LOADINGIF.style.display = 'none';
@@ -187,13 +195,13 @@
                             Fields[i].style.display = 'flex';
                             ButtonsCopy[i].style.display = 'block';
     
-                            CEPTAG.value = `O seu CEP é: ${cep}.`;
-                            STREETAG.value = `Rua: ${street}.`;
-                            CITYTAG.value = `Cidade: ${city}.`;
-                            COUNTRYTAG.value = `País: ${Country}.`;
-                            REGIONTAG.value = `Região: ${region}.`;
-                            COUNTRYREGIONTAG.value = `Região do País: ${Municipality}`;
-                            DDTAG.value = `O seu DD é: (${DD}).`;
+                            CEPTAG.value = VerifyData(cep);
+                            STREETAG.value = VerifyData(street);
+                            CITYTAG.value = VerifyData(city);
+                            COUNTRYTAG.value = VerifyData(Country);
+                            REGIONTAG.value = VerifyData(region);
+                            COUNTRYREGIONTAG.value = VerifyData(Municipality);
+                            DDTAG.value = VerifyData(DD);
                         }
 
 
