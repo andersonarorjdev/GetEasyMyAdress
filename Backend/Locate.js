@@ -175,14 +175,16 @@
                         let REGIONTAG = document.getElementById('Region');
                         let COUNTRYREGIONTAG = document.getElementById('CountryRegion');
                         let DDTAG = document.getElementById('DD');
+                        let Fields = document.getElementsByClassName('Fields');
 
                         let ButtonsCopy = document.querySelectorAll('.CopyButton');
-                        
-
 
 
                         for(let i = 0; i < ButtonsCopy.length; i++){
+                            
                             LOADINGIF.style.display = 'none';
+
+                            Fields[i].style.display = 'flex';
                             ButtonsCopy[i].style.display = 'block';
     
                             CEPTAG.value = `O seu CEP é: ${cep}.`;
