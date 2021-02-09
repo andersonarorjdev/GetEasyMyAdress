@@ -206,7 +206,28 @@
                                 } 
 
                             }else{
-                                return `Seu dado é: ${field}`;
+                                switch (WhatField) {
+                                    case 'CEP':
+                                        return `Seu CEP é ${field}`;
+                                    
+                                    case 'STREET':
+                                        return `Sua Rua é ${field}`;
+                                    
+                                    case 'CITY':
+                                        return `Sua cidade é ${field}`;
+
+                                    case 'COUNTRY':
+                                        return `Seu país é ${field}`;
+                                    
+                                    case 'REGION':
+                                        return `Sua Região é ${field}`;
+                                    
+                                    case 'MUNICIPALATY':
+                                        return `Sua Região geográfica é ${field}`;
+                                    
+                                    case 'DD':
+                                        return `Seu DD é ${field}`;
+                                } 
                             }
                         }
 
