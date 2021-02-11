@@ -52,6 +52,10 @@ input{
     border:none;
     width:50vw;
     background-color:transparent;
+
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: 'Prompt';
 }
 
 .CopyButton{
