@@ -28,7 +28,7 @@
 ```url
   https://get-easy-my-adress-mcr3pxena.vercel.app/
 ```
-or you can click here: <a href="https://get-easy-my-adress-mcr3pxena.vercel.app/"> CLICK HERE TO ACESS</a>
+or you can click here: <a href="https://get-easy-my-adress.vercel.app/"> CLICK HERE TO ACESS</a>
 
 ## Downloading the project⬇️
 ```sh
