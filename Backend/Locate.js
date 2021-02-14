@@ -28,8 +28,6 @@ window.RecuperaPosicao = _ =>{
             .then((response)  => {
                 let state = response.data.address.state;
                 let city;
-
-                console.log(response);
                 
                 if(response.data.address.town == undefined){
                     city = response.data.address.city;   
@@ -42,13 +40,8 @@ window.RecuperaPosicao = _ =>{
                 let Country = response.data.address.country;
                 let Municipality = response.data.address.municipality;
                 let region = response.data.address.region;
-
-              
-                
-
-                
             
-                 axios({
+                    axios({
                         url: `https://viacep.com.br/ws/${FilterState(state)}/${city}/${street}/json`,})
                     .then((response) =>{
                         console.log(response);
