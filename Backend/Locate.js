@@ -1,4 +1,6 @@
- const RecuperaPosicao = _ =>{
+import VerifyData from './VerifyData.js';
+
+window.RecuperaPosicao = _ =>{
     if (navigator.geolocation){
       navigator.geolocation.getCurrentPosition(showPosition, ErrorTakePosition);
           }
@@ -37,11 +39,6 @@
                 let Country = response.data.address.country;
                 let Municipality = response.data.address.municipality;
                 let region = response.data.address.region;
-
-                //Debugs
-                console.log('Ok')
-                console.log(state, city, street, Country, Municipality, region);
-                console.log(response);
                 
                 let StateSymbol = null;
                 switch (state) {
@@ -178,58 +175,6 @@
                         let Fields = document.getElementsByClassName('Fields');
 
                         let ButtonsCopy = document.querySelectorAll('.CopyButton');
-
-
-                        const VerifyData = (field, WhatField) =>{
-                            if(field == undefined){
-                                switch (WhatField) {
-                                    case 'CEP':
-                                        return 'CEP não entrado!';
-                                    
-                                    case 'STREET':
-                                        return 'Rua não encontrada!';
-                                    
-                                    case 'CITY':
-                                        return 'Cidade não encontrada!';
-
-                                    case 'COUNTRY':
-                                        return 'País não encontrado!';
-                                    
-                                    case 'REGION':
-                                        return 'Região não encontrada!';
-                                    
-                                    case 'MUNICIPALATY':
-                                        return 'Região geofráfica não encontrada!';
-                                    
-                                    case 'DD':
-                                        return 'DD não encontrado!';
-                                } 
-
-                            }else{
-                                switch (WhatField) {
-                                    case 'CEP':
-                                        return `Seu CEP é ${field}`;
-                                    
-                                    case 'STREET':
-                                        return `Sua Rua é ${field}`;
-                                    
-                                    case 'CITY':
-                                        return `Sua cidade é ${field}`;
-
-                                    case 'COUNTRY':
-                                        return `Seu país é ${field}`;
-                                    
-                                    case 'REGION':
-                                        return `Sua Região é ${field}`;
-                                    
-                                    case 'MUNICIPALATY':
-                                        return `Sua Região geográfica é ${field}`;
-                                    
-                                    case 'DD':
-                                        return `Seu DD é ${field}`;
-                                } 
-                            }
-                        }
 
                         for(let i = 0; i < ButtonsCopy.length; i++){
                             
