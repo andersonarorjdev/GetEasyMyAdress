@@ -10,7 +10,7 @@
 </p>
 
 
-<h4>Tired to fill great forms to take easy datas, how: CEP, DD?😔 ME TOO!😵</h4>
+<h4>Tired to fill great forms to take easy datas, like: CEP, DD?😔 ME TOO!😵</h4>
 
 >Because it, i decide to create this tool😌. 
  How it works?🤨
